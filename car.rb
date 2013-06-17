@@ -1,7 +1,7 @@
 class Car
 
-  def initialize(type='Buick')
-    @type = type
+  def initialize(opts={})
+    @type = opts[:type] || 'Buick'
   end 
 
   def drive
